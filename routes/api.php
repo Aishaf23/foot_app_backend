@@ -9,7 +9,7 @@ use App\Http\Controllers\RideController;
 
 /* 1. */ Route::post('/auth/user/signup', [AuthController::class, 'userSignup']);
 /* 2. */ Route::post('/auth/buddy/signup', [AuthController::class, 'buddySignup']);
-/* 3. */ oute::post('/auth/user/login', [AuthController::class, 'login']);
+/* 3. */ Route::post('/auth/user/login', [AuthController::class, 'login']);
 
 
 Route::middleware('auth:sanctum')->group(function () {
